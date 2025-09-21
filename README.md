@@ -69,8 +69,8 @@ pnpm test:ui      # Run tests with UI
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Hugomelo123/santria.git
-cd santria
+git clone <repository-url>
+cd <project-name>
 
 # Install dependencies
 pnpm install
@@ -159,13 +159,13 @@ This is a **demo repository** for portfolio purposes. Contributions are welcome 
 ## 📊 Project Status
 - **Status**: 🟢 Active Development
 - **Version**: 0.1.0 (Demo)
-- **Last Updated**: January 2025
+- **Last Updated**: September 2025
 - **Demo URL**: [Coming Soon]
 - **Documentation**: [docs/](./docs/)
 
 ## 🔗 Useful Links
-- **Repository**: [GitHub](https://github.com/Hugomelo123/santria)
-- **Issues**: [Report Bug](https://github.com/Hugomelo123/santria/issues)
+- **Repository**: [GitHub Repository](./)
+- **Issues**: [Report Bug](./issues)
 - **Security**: [SECURITY.md](./SECURITY.md)
 - **Changelog**: [CHANGELOG.md](./docs/CHANGELOG.md)
 - **Architecture**: [docs/architecture.md](./docs/architecture.md)
