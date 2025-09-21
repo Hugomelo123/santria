@@ -4,9 +4,10 @@
 [![Next.js](https://img.shields.io/badge/next.js-14-black)]()
 [![React](https://img.shields.io/badge/react-18-blue)]()
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss-latest-06B6D4)]()
-[![CI](https://github.com/Hugomelo123/santria/actions/workflows/ci.yml/badge.svg)]()
+[![TypeScript](https://img.shields.io/badge/typescript-5.3-blue)]()
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)]()
 
-> **Note**: This repository is a **public/demo version** of the Santria dashboard, intended for portfolio and presentation purposes.  
+> **⚠️ Demo Repository**: This repository is a **public/demo version** of the Santria dashboard, intended for portfolio and presentation purposes.  
 > It does **not** contain real patient data, production keys, or private integrations.  
 > Any feature requiring external services (e.g., WhatsApp Business API) is **mocked** or disabled.
 
@@ -17,13 +18,36 @@
 
 This repository exposes **only the frontend/dashboard** (Next.js) in demo mode, with **mock data** for demonstration.
 
+## 🎯 Features (Demo)
+- **📊 Dashboard Overview** - Real-time analytics and statistics
+- **📅 Appointment Management** - View and manage patient appointments
+- **👥 Patient Management** - Patient database with mock data
+- **📱 WhatsApp Integration** - Mocked reminder system
+- **📈 Analytics** - Clinic performance metrics
+- **🔔 Notifications** - Appointment reminders and alerts
+- **📱 Responsive Design** - Mobile-first approach
+- **🌐 Multi-language** - Internationalization support (EN/PT/FR/DE)
+
 ---
 
 ## 🧱 Tech Stack
-- **Next.js (App Router)** • **React** • **TypeScript**  
-- **Tailwind CSS** for styling  
-- (Optional) **Zustand** or **React Query** for state/data fetching  
-- (Optional public demo) **Vitest / React Testing Library** for testing  
+- **Frontend**: Next.js 14 (App Router) • React 18 • TypeScript 5.3
+- **Styling**: Tailwind CSS • PostCSS • Autoprefixer
+- **State Management**: Zustand (lightweight state management)
+- **Data Fetching**: React Query (TanStack Query)
+- **Testing**: Vitest • React Testing Library • JSDOM
+- **Development**: ESLint • Prettier • TypeScript strict mode
+- **Package Manager**: PNPM (fast, disk space efficient)
+
+## 📦 Available Scripts
+```bash
+pnpm dev          # Start development server (http://localhost:3000)
+pnpm build        # Build for production
+pnpm start        # Start production server
+pnpm lint         # Run ESLint
+pnpm test         # Run tests with Vitest
+pnpm test:ui      # Run tests with UI
+```
 
 ---
 
@@ -36,17 +60,49 @@ This repository exposes **only the frontend/dashboard** (Next.js) in demo mode, 
 ---
 
 ## 🚀 Getting Started
-Requirements: **Node.js 20+** and **PNPM** (or npm/yarn).
 
+### Prerequisites
+- **Node.js 20+** (recommended: use nvm or fnm)
+- **PNPM** (recommended) or npm/yarn
+- **Git** for cloning
+
+### Installation
 ```bash
+# Clone the repository
+git clone https://github.com/Hugomelo123/santria.git
+cd santria
+
+# Install dependencies
 pnpm install
-cp .env.example .env.local    # adjust public values if needed
-pnpm dev                      # http://localhost:3000
+
+# Copy environment variables
+cp .env.example .env.local
+
+# Start development server
+pnpm dev
 ```
 
-If the dashboard needs an API (demo mode), configure:
-```
+### Environment Configuration
+```bash
+# .env.local
+NEXT_PUBLIC_APP_NAME=Santria
 NEXT_PUBLIC_API_URL=http://localhost:3001
+NEXT_PUBLIC_DEMO_MODE=true
+```
+
+### Development
+```bash
+# Start development server
+pnpm dev                    # http://localhost:3000
+
+# Build for production
+pnpm build
+
+# Run tests
+pnpm test
+
+# Run linting
+pnpm lint
 ```
 
 ## 🧪 Demo Data
@@ -68,13 +124,51 @@ Add anonymized or dummy screenshots in: `/docs/screenshots/`
 .env.example
 ```
 
+## 🚀 Performance & Optimization
+- **⚡ Fast Loading**: Next.js 14 with App Router for optimal performance
+- **📱 Responsive**: Mobile-first design with Tailwind CSS
+- **🔧 TypeScript**: Type safety and better developer experience
+- **📦 Bundle Size**: Optimized with PNPM and tree-shaking
+- **🧪 Testing**: Comprehensive test coverage with Vitest
+
 ## 🛣️ Public Roadmap
 The public/demo version of Santria will only showcase non-sensitive parts of the project. Planned updates include:
-- Improved dashboard UI with demo analytics
-- Mocked appointment flow (create, confirm, cancel)
-- Sample patient list with fake data
-- Screenshots and demo videos in `/docs`
-- Internationalization (EN/PT/FR/DE) in demo mode
+- ✅ Improved dashboard UI with demo analytics
+- ✅ Mocked appointment flow (create, confirm, cancel)
+- ✅ Sample patient list with fake data
+- ✅ Screenshots and demo videos in `/docs`
+- ✅ Internationalization (EN/PT/FR/DE) in demo mode
+- 🔄 Real-time notifications (mocked)
+- 🔄 Advanced analytics dashboard
+- 🔄 Patient management system
+
+## 🤝 Contributing
+This is a **demo repository** for portfolio purposes. Contributions are welcome for:
+- 🐛 Bug fixes
+- 📚 Documentation improvements
+- 🎨 UI/UX enhancements
+- 🧪 Test improvements
+
+### Development Guidelines
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📊 Project Status
+- **Status**: 🟢 Active Development
+- **Version**: 0.1.0 (Demo)
+- **Last Updated**: January 2025
+- **Demo URL**: [Coming Soon]
+- **Documentation**: [docs/](./docs/)
+
+## 🔗 Useful Links
+- **Repository**: [GitHub](https://github.com/Hugomelo123/santria)
+- **Issues**: [Report Bug](https://github.com/Hugomelo123/santria/issues)
+- **Security**: [SECURITY.md](./SECURITY.md)
+- **Changelog**: [CHANGELOG.md](./docs/CHANGELOG.md)
+- **Architecture**: [docs/architecture.md](./docs/architecture.md)
 
 ## 🛡️ Security Policy
 See `SECURITY.md` for how to report vulnerabilities.
