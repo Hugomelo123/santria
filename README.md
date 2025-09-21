@@ -55,3 +55,4 @@ Vê `SECURITY.md` para reportar vulnerabilidades.
 
 ## 📜 Licença
 Este repositório é **All Rights Reserved**, destinado a demonstração pública do painel.
+# santria
