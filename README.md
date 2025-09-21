@@ -5,7 +5,8 @@
 [![React](https://img.shields.io/badge/react-18-blue)]()
 [![TailwindCSS](https://img.shields.io/badge/tailwindcss-latest-06B6D4)]()
 [![TypeScript](https://img.shields.io/badge/typescript-5.3-blue)]()
-[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)]()
+[![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey)]()
+[![Last commit](https://img.shields.io/github/last-commit/Hugomelo123/santria)]()
 
 > **⚠️ Demo Repository**: This repository is a **public/demo version** of the Santria dashboard, intended for portfolio and presentation purposes.  
 > It does **not** contain real patient data, production keys, or private integrations.  
@@ -148,6 +149,10 @@ This is a **demo repository** for portfolio purposes. Contributions are welcome 
 - 📚 Documentation improvements
 - 🎨 UI/UX enhancements
 - 🧪 Test improvements
+
+### Contact
+For questions or collaboration, please contact:
+- **Email**: hugo1297@gmail.com
 
 ### Development Guidelines
 1. Fork the repository
