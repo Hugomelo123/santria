@@ -42,7 +42,7 @@ git push -u origin public
 ### Método 3: SSH (Mais Seguro)
 ```bash
 # Gerar chave SSH
-ssh-keygen -t ed25519 -C "hugo@example.com"
+ssh-keygen -t ed25519 -C "hugo1297@gmail.com"
 
 # Mostrar chave pública
 cat ~/.ssh/id_ed25519.pub

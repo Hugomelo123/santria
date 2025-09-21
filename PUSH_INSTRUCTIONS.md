@@ -34,7 +34,7 @@ git push -u origin public
 ### Opção 3: SSH (Mais Seguro)
 ```bash
 # Gerar chave SSH
-ssh-keygen -t ed25519 -C "hugo@example.com"
+ssh-keygen -t ed25519 -C "hugo1297@gmail.com"
 
 # Adicionar chave ao GitHub
 cat ~/.ssh/id_ed25519.pub
