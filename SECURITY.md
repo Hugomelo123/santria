@@ -1,7 +1,8 @@
-# Política de Segurança
+# Security Policy
 
-Se identificares uma vulnerabilidade, **não** abras um issue público. Envia um email para:
+If you discover a vulnerability, **do not** open a public issue.
 
-- segurança: security@santria.example (substituir pelo teu email)
+Please contact:
+- security contact: security@santria.example  <!-- replace with your email -->
 
-Inclui detalhes suficientes para reproduzir o problema. Obrigado por ajudares a manter o projeto seguro.
+Include enough details to reproduce the issue. Thank you for helping keep the project safe.

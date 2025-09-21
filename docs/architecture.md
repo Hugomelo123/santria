@@ -1,9 +1,10 @@
-# Arquitetura (Frontend — Público)
+# Frontend Architecture (Public)
 
-- **Next.js (App Router)** para routing e server components quando aplicável.
-- **Tailwind** para styling.
-- **Camadas**:
-  - `/app/(dashboard)`: páginas do painel (demo)
-  - `/components`: UI reutilizável
-  - `/lib`: utils, schemas zod, clients
-- **Env**: `NEXT_PUBLIC_*` apenas. Integrações privadas ficam fora deste repo.
+- Next.js (App Router)
+- Tailwind CSS
+- Suggested layers:
+  - `/app/(dashboard)` — demo pages
+  - `/components` — UI
+  - `/lib` — utils, schemas
+- Only `NEXT_PUBLIC_*` envs are used here.
+- Private integrations remain outside this repository.
