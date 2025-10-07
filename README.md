@@ -8,158 +8,88 @@
 [![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey)]()
 [![Last commit](https://img.shields.io/github/last-commit/Hugomelo123/santria)]()
 
-> **⚠️ Demo Repository**: This repository is a **public/demo version** of the Santria dashboard, intended for portfolio and presentation purposes.  
-> It does **not** contain real patient data, production keys, or private integrations.  
-> Any feature requiring external services (e.g., WhatsApp Business API) is **mocked** or disabled.
+> ⚠️ **Public Demo Repository** — This is a **demo-only frontend** of the Santria Dashboard.  
+> It contains no real data, production keys, or patient information.  
+> Any integration with external APIs (e.g., WhatsApp Business) is **mocked** or **disabled**.
 
 ---
 
 ## ✨ What is Santria?
-**Santria** is a SaaS platform developed in Luxembourg to help private clinics reduce patient no-shows through intelligent WhatsApp reminders and simplified patient flows.  
+**Santria** is a SaaS solution from Luxembourg that helps private clinics reduce patient no-shows using intelligent reminders, confirmations, and rescheduling flows.  
+This repository includes only the **frontend dashboard demo** (Next.js).
 
-This repository exposes **only the frontend/dashboard** (Next.js) in demo mode, with **mock data** for demonstration.
+---
 
-## 🎯 Features (Demo)
-### 🎨 Frontend Features (This Repository)
-- **📊 Dashboard Overview** - Real-time analytics and statistics
-- **📅 Appointment Management** - View and manage patient appointments
-- **👥 Patient Management** - Patient database with mock data
-- **📱 Responsive Design** - Mobile-first approach
-- **🌐 Multi-language** - Internationalization support (EN/PT/FR/DE)
+## 🎯 Features (Demo Only)
+- **📊 Dashboard Overview** – mock analytics
+- **📅 Appointment Management** – simulated appointments
+- **👥 Patient List** – demo patient data
+- **🌐 i18n** – EN / PT / FR / DE
+- **📱 Responsive Design** – TailwindCSS
 
-### 🏗️ Complete System Features (Full Project)
-- **🤖 Messaging Automation** - Automated appointment communications
-- **📱 Smart Notifications** - Intelligent reminder and rescheduling system
-- **🏥 Multi-tenant Architecture** - Scalable multi-clinic support
-- **🔐 Enterprise Security** - GDPR compliance and data protection
-- **📈 Advanced Analytics** - Real-time clinic performance insights
-- **🔄 Business Process Automation** - Custom workflow implementations
-- **📊 System Monitoring** - Comprehensive observability and alerting
-- **🚀 Production Infrastructure** - Scalable deployment architecture
+> ⚠️ All displayed data is fictional. No real patients or clinics are represented.
 
 ---
 
 ## 🧱 Tech Stack
-### 🎨 Frontend (This Demo)
-- **Framework**: Next.js 14 (App Router) • React 18 • TypeScript 5.3
-- **Styling**: Tailwind CSS • PostCSS • Autoprefixer
-- **State Management**: Zustand (lightweight state management)
-- **Data Fetching**: React Query (TanStack Query)
-- **Testing**: Vitest • React Testing Library • JSDOM
-- **Development**: ESLint • Prettier • TypeScript strict mode
-- **Package Manager**: PNPM (fast, disk space efficient)
+**Frontend:**  
+Next.js 14 · React 18 · TypeScript 5.3 · TailwindCSS · Zustand · TanStack Query
 
-### 🏗️ Full Stack (Complete Project)
-- **Backend**: Modern Node.js framework • Type-safe ORM • PostgreSQL database
-- **Authentication**: JWT-based • Role-based access control • Multi-tenant support
-- **Automation**: Workflow orchestration • External API integrations
-- **Infrastructure**: Containerization • Load balancing • Caching layer
-- **Monitoring**: Metrics collection • Visualization dashboards • Alerting systems
-- **Security**: Data protection compliance • Encryption • Audit logging
-- **Testing**: Unit testing • Performance testing • End-to-end testing
-- **CI/CD**: Automated pipelines • Deployment automation
+**Testing & Dev Tools:**  
+Vitest · React Testing Library · ESLint · Prettier · Type Safety (strict)
 
-## 📦 Available Scripts
+---
+
+## ⚙️ Getting Started
+### Requirements
+- Node.js 20+
+- PNPM (recommended)
+- Git
+
+### Setup
 ```bash
-# Development
-pnpm dev          # Start development server (http://localhost:3000)
-pnpm build        # Build for production
-pnpm start        # Start production server
-pnpm lint         # Run ESLint
-pnpm test         # Run tests with Vitest
-pnpm test:ui      # Run tests with UI
-
-# Docker
-pnpm docker:build # Build Docker image
-pnpm docker:run   # Run Docker container
-pnpm docker:up    # Start with docker-compose
-pnpm docker:down  # Stop docker-compose
-pnpm docker:logs  # View logs
-pnpm docker:clean # Clean up containers
-
-# Deploy
-pnpm deploy:staging # Deploy to staging
-pnpm deploy:prod    # Deploy to production
+git clone https://github.com/Hugomelo123/santria.git
+cd santria
+pnpm install
+cp .env.example .env.local
+pnpm dev
 ```
+
+### Environment Variables (Demo)
+```bash
+NEXT_PUBLIC_APP_NAME=Santria
+NEXT_PUBLIC_DEMO_MODE=true
+# Do NOT link to real APIs in this repo.
+```
+
+### Scripts
+```bash
+pnpm dev       # Development mode
+pnpm build     # Build for preview
+pnpm start     # Run built app locally
+pnpm lint      # Run ESLint
+pnpm test      # Run Vitest (optional)
+```
+
+> 🧱 All deploy or production scripts have been removed for public safety.
 
 ---
 
 ## 🔒 Security & Privacy
-- **Never** commit real `.env` files — use `.env.example` with safe defaults.  
-- `NEXT_PUBLIC_*` variables are public by design — do not put secrets there.  
-- Sensitive endpoints or third-party integrations are **not included** here.  
-- Only **mock/fake data** is provided for demonstration.  
+- No `.env`, `.pem`, or secret files in the repository.
+- `NEXT_PUBLIC_*` vars are safe and public.
+- No personal data, patient data, or identifiers.
+- All demo screenshots use mock or anonymized content.
+
+### GitHub Security
+- ✅ Secret Scanning enabled
+- ✅ Push Protection enabled
+- ✅ Branch Protection (main)
+- ✅ Dependabot alerts active
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- **Node.js 20+** (recommended: use nvm or fnm)
-- **PNPM** (recommended) or npm/yarn
-- **Git** for cloning
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/Hugomelo123/santria.git
-cd santria
-
-# Install dependencies
-pnpm install
-
-# Copy environment variables
-cp .env.example .env.local
-
-# Start development server
-pnpm dev
-```
-
-### Environment Configuration
-```bash
-# .env.local
-NEXT_PUBLIC_APP_NAME=Santria
-NEXT_PUBLIC_API_URL=http://localhost:3001
-NEXT_PUBLIC_DEMO_MODE=true
-```
-
-### Development
-```bash
-# Start development server
-pnpm dev                    # http://localhost:3000
-
-# Build for production
-pnpm build
-
-# Run tests
-pnpm test
-
-# Run linting
-pnpm lint
-```
-
-## 🧪 Demo Data
-Tables/cards are powered by fixtures (`/fixtures`) or mock endpoints.  
-**No real patient or clinic data is ever included.**
-
-### 🚀 Quick Demo
-To see the dashboard in action locally:
-
-```bash
-# Clone and run the demo
-git clone https://github.com/Hugomelo123/santria.git
-cd santria
-pnpm install
-pnpm dev
-
-# Open http://localhost:3000
-# The dashboard will load with mock data
-```
-
-## 📸 Screenshots (Demo Only)
-Add anonymized or dummy screenshots in: `/docs/screenshots/`
-
-## 📁 Suggested Structure
+## 📁 Project Structure
 ```
 /app
   /(marketing)
@@ -171,112 +101,32 @@ Add anonymized or dummy screenshots in: `/docs/screenshots/`
 .env.example
 ```
 
-## 🚀 Performance & Optimization
-- **⚡ Fast Loading**: Next.js 14 with App Router for optimal performance
-- **📱 Responsive**: Mobile-first design with Tailwind CSS
-- **🔧 TypeScript**: Type safety and better developer experience
-- **📦 Bundle Size**: Optimized with PNPM and tree-shaking
-- **🧪 Testing**: Comprehensive test coverage with Vitest
-
-## 🐳 Docker Deployment
-The project includes full Docker support for easy deployment:
-
-### Quick Start with Docker
-```bash
-# Build and run with Docker Compose
-pnpm docker:up
-
-# Access the application
-# http://localhost:3000 (direct)
-# http://localhost:80 (via nginx)
-```
-
-### Docker Features
-- **Multi-stage build** for optimized image size
-- **Non-root user** for security
-- **Health checks** for monitoring
-- **Nginx reverse proxy** for production
-- **Security headers** configured
-
-### Production Deployment
-```bash
-# Deploy with production profile
-pnpm deploy:prod
-
-# This includes:
-# - Build optimization
-# - Test execution
-# - Docker Compose with nginx
-```
-
-## 🎨 Showcase Features
-This demo showcases modern web development practices and enterprise-grade architecture:
-
-### 🎨 Frontend Excellence
-- ✅ **Modern React Patterns** - Hooks, Context, Custom components
-- ✅ **TypeScript Excellence** - Full type safety and IntelliSense
-- ✅ **Responsive Design** - Mobile-first with Tailwind CSS
-- ✅ **Performance Optimized** - Next.js 14 with App Router
-- ✅ **Testing Setup** - Vitest + React Testing Library
-- ✅ **Developer Experience** - ESLint, Prettier, Hot reload
-
-### 🏗️ Enterprise Architecture (Full Project)
-- ✅ **Microservices Architecture** - Modular backend design with clean separation
-- ✅ **Database Design** - Relational database with type-safe ORM and migrations
-- ✅ **Automation Workflows** - Business process automation and integration
-- ✅ **API Integration** - External service integrations with webhook handling
-- ✅ **Security Implementation** - Data protection compliance and encryption
-- ✅ **Infrastructure as Code** - Containerized deployment and orchestration
-- ✅ **Observability Stack** - Comprehensive monitoring and alerting systems
-- ✅ **CI/CD Pipeline** - Automated testing and deployment workflows
-
-## 🛣️ Public Roadmap
-The public/demo version of Santria will only showcase non-sensitive parts of the project. Planned updates include:
-- ✅ Improved dashboard UI with demo analytics
-- ✅ Mocked appointment flow (create, confirm, cancel)
-- ✅ Sample patient list with fake data
-- ✅ Screenshots and demo videos in `/docs`
-- ✅ Internationalization (EN/PT/FR/DE) in demo mode
-- 🔄 Real-time notifications (mocked)
-- 🔄 Advanced analytics dashboard
-- 🔄 Patient management system
-
-## 🤝 Contributing
-This is a **demo repository** for portfolio purposes. Contributions are welcome for:
-- 🐛 Bug fixes
-- 📚 Documentation improvements
-- 🎨 UI/UX enhancements
-- 🧪 Test improvements
-
-### Contact
-For questions or collaboration, please contact:
-- **Email**: hugo1297@gmail.com
-
-### Development Guidelines
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📊 Project Status
-- **Status**: 🟢 Production Ready
-- **Version**: 1.0.0 (Demo)
-- **Last Updated**: September 2025
-- **Repository**: [GitHub](https://github.com/Hugomelo123/santria)
-- **Documentation**: Available in `/docs` folder
-
-## 🔗 Useful Links
-- **Repository**: [GitHub Repository](https://github.com/Hugomelo123/santria)
-- **Issues**: [Report Bug](https://github.com/Hugomelo123/santria/issues)
-- **Security**: [SECURITY.md](./SECURITY.md)
-- **Changelog**: [CHANGELOG.md](./docs/CHANGELOG.md)
-- **Architecture**: [Architecture Guide](./docs/architecture.md)
-- **Overview**: [Project Overview](./docs/overview.md)
+---
 
 ## 🛡️ Security Policy
-See `SECURITY.md` for how to report vulnerabilities.
+See [SECURITY.md](./SECURITY.md).  
+Security issues or vulnerabilities can be reported to **hugo1297@gmail.com**.
+
+---
 
 ## 📜 License
-This repository is licensed **All Rights Reserved**.  
-It is intended for public demonstration only and must not be used in production without explicit permission.
+**All Rights Reserved**  
+Use limited to public demonstration and portfolio purposes.  
+Production or commercial use requires explicit written authorization.
+
+---
+
+## 📌 Transparency
+- This repository is not connected to the production backend.
+- The WhatsApp Business API and backend integrations remain private.
+- All workflows, metrics, and data structures are illustrative only.
+
+---
+
+## ✅ Public Release Checklist
+- [ ] No `.git` history leaks
+- [ ] No `node_modules` committed
+- [ ] `.env.example` only
+- [ ] No PII in screenshots
+- [ ] No real URLs, webhooks, or secrets
+- [ ] GitHub scanning & protection enabled
