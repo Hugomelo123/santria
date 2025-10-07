@@ -8,7 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "docker:build": "docker build -t santria-dashboard .",
+    "docker:run": "docker run -p 3000:3000 santria-dashboard",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:clean": "docker-compose down -v --remove-orphans",
+    "deploy:staging": "pnpm build && pnpm test && docker-compose -f docker-compose.yml up -d",
+    "deploy:prod": "pnpm build && pnpm test && docker-compose --profile production up -d"
   },
   "dependencies": {
     "next": "14.0.4",

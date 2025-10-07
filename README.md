@@ -42,12 +42,25 @@ This repository exposes **only the frontend/dashboard** (Next.js) in demo mode, 
 
 ## 📦 Available Scripts
 ```bash
+# Development
 pnpm dev          # Start development server (http://localhost:3000)
 pnpm build        # Build for production
 pnpm start        # Start production server
 pnpm lint         # Run ESLint
 pnpm test         # Run tests with Vitest
 pnpm test:ui      # Run tests with UI
+
+# Docker
+pnpm docker:build # Build Docker image
+pnpm docker:run   # Run Docker container
+pnpm docker:up    # Start with docker-compose
+pnpm docker:down  # Stop docker-compose
+pnpm docker:logs  # View logs
+pnpm docker:clean # Clean up containers
+
+# Deploy
+pnpm deploy:staging # Deploy to staging
+pnpm deploy:prod    # Deploy to production
 ```
 
 ---
@@ -131,6 +144,37 @@ Add anonymized or dummy screenshots in: `/docs/screenshots/`
 - **🔧 TypeScript**: Type safety and better developer experience
 - **📦 Bundle Size**: Optimized with PNPM and tree-shaking
 - **🧪 Testing**: Comprehensive test coverage with Vitest
+
+## 🐳 Docker Deployment
+The project includes full Docker support for easy deployment:
+
+### Quick Start with Docker
+```bash
+# Build and run with Docker Compose
+pnpm docker:up
+
+# Access the application
+# http://localhost:3000 (direct)
+# http://localhost:80 (via nginx)
+```
+
+### Docker Features
+- **Multi-stage build** for optimized image size
+- **Non-root user** for security
+- **Health checks** for monitoring
+- **Nginx reverse proxy** for production
+- **Security headers** configured
+
+### Production Deployment
+```bash
+# Deploy with production profile
+pnpm deploy:prod
+
+# This includes:
+# - Build optimization
+# - Test execution
+# - Docker Compose with nginx
+```
 
 ## 🛣️ Public Roadmap
 The public/demo version of Santria will only showcase non-sensitive parts of the project. Planned updates include:
