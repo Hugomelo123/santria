@@ -83,8 +83,8 @@ pnpm deploy:prod    # Deploy to production
 ### Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd <project-name>
+git clone https://github.com/Hugomelo123/santria.git
+cd santria
 
 # Install dependencies
 pnpm install
@@ -176,6 +176,16 @@ pnpm deploy:prod
 # - Docker Compose with nginx
 ```
 
+## 🎨 Showcase Features
+This demo showcases modern web development practices:
+- ✅ **Modern React Patterns** - Hooks, Context, Custom components
+- ✅ **TypeScript Excellence** - Full type safety and IntelliSense
+- ✅ **Responsive Design** - Mobile-first with Tailwind CSS
+- ✅ **Docker Ready** - Production-ready containerization
+- ✅ **Performance Optimized** - Next.js 14 with App Router
+- ✅ **Testing Setup** - Vitest + React Testing Library
+- ✅ **Developer Experience** - ESLint, Prettier, Hot reload
+
 ## 🛣️ Public Roadmap
 The public/demo version of Santria will only showcase non-sensitive parts of the project. Planned updates include:
 - ✅ Improved dashboard UI with demo analytics
@@ -206,10 +216,10 @@ For questions or collaboration, please contact:
 5. Open a Pull Request
 
 ## 📊 Project Status
-- **Status**: 🟢 Active Development
-- **Version**: 0.1.0 (Demo)
+- **Status**: 🟢 Production Ready
+- **Version**: 1.0.0 (Demo)
 - **Last Updated**: September 2025
-- **Demo URL**: [Coming Soon]
+- **Demo URL**: [Live Demo](https://github.com/Hugomelo123/santria)
 - **Documentation**: [docs/](./docs/)
 
 ## 🔗 Useful Links
