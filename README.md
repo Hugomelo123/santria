@@ -123,6 +123,20 @@ pnpm lint
 Tables/cards are powered by fixtures (`/fixtures`) or mock endpoints.  
 **No real patient or clinic data is ever included.**
 
+### 🚀 Quick Demo
+To see the dashboard in action locally:
+
+```bash
+# Clone and run the demo
+git clone https://github.com/Hugomelo123/santria.git
+cd santria
+pnpm install
+pnpm dev
+
+# Open http://localhost:3000
+# The dashboard will load with mock data
+```
+
 ## 📸 Screenshots (Demo Only)
 Add anonymized or dummy screenshots in: `/docs/screenshots/`
 
@@ -219,15 +233,16 @@ For questions or collaboration, please contact:
 - **Status**: 🟢 Production Ready
 - **Version**: 1.0.0 (Demo)
 - **Last Updated**: September 2025
-- **Demo URL**: [Live Demo](https://github.com/Hugomelo123/santria)
-- **Documentation**: [docs/](./docs/)
+- **Repository**: [GitHub](https://github.com/Hugomelo123/santria)
+- **Documentation**: Available in `/docs` folder
 
 ## 🔗 Useful Links
-- **Repository**: [GitHub Repository](./)
-- **Issues**: [Report Bug](./issues)
+- **Repository**: [GitHub Repository](https://github.com/Hugomelo123/santria)
+- **Issues**: [Report Bug](https://github.com/Hugomelo123/santria/issues)
 - **Security**: [SECURITY.md](./SECURITY.md)
 - **Changelog**: [CHANGELOG.md](./docs/CHANGELOG.md)
-- **Architecture**: [docs/architecture.md](./docs/architecture.md)
+- **Architecture**: [Architecture Guide](./docs/architecture.md)
+- **Overview**: [Project Overview](./docs/overview.md)
 
 ## 🛡️ Security Policy
 See `SECURITY.md` for how to report vulnerabilities.
