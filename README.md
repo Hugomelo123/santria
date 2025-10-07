@@ -28,14 +28,14 @@ This repository exposes **only the frontend/dashboard** (Next.js) in demo mode, 
 - **🌐 Multi-language** - Internationalization support (EN/PT/FR/DE)
 
 ### 🏗️ Complete System Features (Full Project)
-- **🤖 WhatsApp Automation** - Business API integration with n8n workflows
-- **📱 Smart Reminders** - Automated appointment confirmations and rescheduling
-- **🏥 Multi-tenant Architecture** - Support for multiple clinics with data isolation
-- **🔐 Advanced Security** - GDPR compliance, encryption, audit trails
-- **📈 Real-time Analytics** - Clinic performance metrics and insights
-- **🔄 Workflow Automation** - Custom n8n workflows for clinic processes
-- **📊 Monitoring & Alerting** - Prometheus/Grafana observability stack
-- **🚀 Production Ready** - Docker, CI/CD, automated deployments
+- **🤖 Messaging Automation** - Automated appointment communications
+- **📱 Smart Notifications** - Intelligent reminder and rescheduling system
+- **🏥 Multi-tenant Architecture** - Scalable multi-clinic support
+- **🔐 Enterprise Security** - GDPR compliance and data protection
+- **📈 Advanced Analytics** - Real-time clinic performance insights
+- **🔄 Business Process Automation** - Custom workflow implementations
+- **📊 System Monitoring** - Comprehensive observability and alerting
+- **🚀 Production Infrastructure** - Scalable deployment architecture
 
 ---
 
@@ -50,14 +50,14 @@ This repository exposes **only the frontend/dashboard** (Next.js) in demo mode, 
 - **Package Manager**: PNPM (fast, disk space efficient)
 
 ### 🏗️ Full Stack (Complete Project)
-- **Backend**: NestJS • Prisma ORM • PostgreSQL 15
-- **Authentication**: JWT • RBAC • Multi-tenant architecture
-- **Automation**: n8n workflows • WhatsApp Business API
-- **Infrastructure**: Docker • Docker Compose • Nginx • Redis
-- **Monitoring**: Prometheus • Grafana • Alertmanager
-- **Security**: GDPR compliance • AES-256 encryption • Audit logs
-- **Testing**: Jest • K6 (load testing) • E2E testing
-- **CI/CD**: GitHub Actions • Automated deployments
+- **Backend**: Modern Node.js framework • Type-safe ORM • PostgreSQL database
+- **Authentication**: JWT-based • Role-based access control • Multi-tenant support
+- **Automation**: Workflow orchestration • External API integrations
+- **Infrastructure**: Containerization • Load balancing • Caching layer
+- **Monitoring**: Metrics collection • Visualization dashboards • Alerting systems
+- **Security**: Data protection compliance • Encryption • Audit logging
+- **Testing**: Unit testing • Performance testing • End-to-end testing
+- **CI/CD**: Automated pipelines • Deployment automation
 
 ## 📦 Available Scripts
 ```bash
@@ -221,13 +221,13 @@ This demo showcases modern web development practices and enterprise-grade archit
 - ✅ **Developer Experience** - ESLint, Prettier, Hot reload
 
 ### 🏗️ Enterprise Architecture (Full Project)
-- ✅ **Microservices Architecture** - NestJS backend with modular design
-- ✅ **Database Design** - PostgreSQL with Prisma ORM and migrations
-- ✅ **Automation Workflows** - n8n integration for business processes
-- ✅ **API Integration** - WhatsApp Business API with webhook handling
-- ✅ **Security Implementation** - GDPR compliance and data encryption
-- ✅ **Infrastructure as Code** - Docker containerization and orchestration
-- ✅ **Observability Stack** - Monitoring with Prometheus/Grafana
+- ✅ **Microservices Architecture** - Modular backend design with clean separation
+- ✅ **Database Design** - Relational database with type-safe ORM and migrations
+- ✅ **Automation Workflows** - Business process automation and integration
+- ✅ **API Integration** - External service integrations with webhook handling
+- ✅ **Security Implementation** - Data protection compliance and encryption
+- ✅ **Infrastructure as Code** - Containerized deployment and orchestration
+- ✅ **Observability Stack** - Comprehensive monitoring and alerting systems
 - ✅ **CI/CD Pipeline** - Automated testing and deployment workflows
 
 ## 🛣️ Public Roadmap
